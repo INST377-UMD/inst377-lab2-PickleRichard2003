@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+        <style>
+            body{
+                background-color: rgb(173, 145, 229);
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+            }
+
+            input{
+                background-color: antiquewhite;
+            }
+
+            .contactUs{
+                background-color: rgb(178, 140, 148);
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-right: 100px;
+
+            .submit-button{
+                position: absolute;
+                top:50%;
+                background-color:#e6b254;
+                color: #fff;
+                border:none; 
+                font-size: 50px;
+                border-radius:10px; 
+                padding:15px;
+                min-height:30px; 
+                min-width: 120px;
+            }
+            .submit-button:hover{
+                background-color: aquamarine;
+            }
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>INST377 - Lab 2 - Contact Me</h1>
+        <form name ="contactForm" method="get" action="INST377-Lab-Success.html">
+            <!-- User Name Details -->
+            <div class="contactUs"
+            <label for="firstName"> First Name:</label>
+            <input type="text" id="firstName" required>
+            <br>
+            <label for="lastName"> Last Name:</label>
+            <input type="text" id="lastName" required>
+            <br>
+            <hr>
+            <!-- Inquiry Date -->
+            <label type="inquiryDate"> Inquiry Date:</label>
+            <input type="datetime-local" id="inquiryDate">
+            <br>
+            <!-- Inquiry Reason -->
+            <label for="reason">Inquiry Type:</label>
+            <br>
+            <input type="radio" name="reason">Media Inquiries <br>
+            <input type="radio" name="reason">General Inquiries <br>
+            <input type="radio" name="reason">Corporate Inquiries <br>
+            <br><hr>
+            <!-- Address -->
+            <h3>Address</h3>
+            <label for="street">Street:</label>
+            <input type="text" id="street"><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city"><br>
+
+            <label for="state">State:</label>
+            <input type="text" style="text-transform:uppercase" id="state" maxlength="2"><br>
+            
+            <label for="zip">Zip Code:</label>
+            <input type="type" id="zip" maxlength="5"><br>
+
+            <!-- University Affiliation -->
+             <label for="University">What University are you affiliated with?: </label>
+             <select id="university" name="university">
+                    <option hidden disabled selected>-- Select Option --</option>
+                    <option value="umd">UMD</option>
+                    <option value="umbc">UMBC</option>
+                    <option value="other">Other</option>
+             </select>
+             <br>
+           <!-- Email -->
+            <label for="email">What is the best email to reach you at?: </label>
+            <input type="email" id="email" placeholder="example@gmail.com">
+            <br>
+            <hr>
+            <!-- Submit Button -->
+                <input type="submit" class="submit-button" value="Send It!">
+             </div>
+            </form>
+    </body>
+</html> 
